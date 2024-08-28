@@ -1,63 +1,4 @@
-
-  <h3><b>My Songs App</b></h3>
- a MERN full-stack application for managing song information with CRUD operations and generating overall statistics about songs, artists, albums, and genres.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
-    <li><a href="https://react.dev/">React with TypeScript</a></li>
-    <li><a href="https://redux-toolkit.js.org/">Redux Toolkit</a></li>
-    <li><a href="https://redux-saga.js.org/">Redux Saga</a></li>
-    <li><a href="https://emotion.sh/docs/introduction">Emotion</a></li>
-    <li><a href="https://rebassjs.org/">Styled Components-RebassJs</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-    <li><a href="https://mongoosejs.com/">Monogoose</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Deployment</summary>
-  <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-  </ul>
-</details>
-
-### Setup
-
-Clone this repository to your desired folder:
-
-### Install
-
-Install this project with:
-
-```sh
-  cd frontend
-  npm install
-  cd backend
-  npm install
-```
---->
-Mongo Db setup
-use CMD 
-```sh
-mongosh
-use songdb
-db.songs.insertMany(
-  [{"title": "Shape of You", "artist": "Ed Sheeran", "album": "Divide", "genre": "Pop"},
+[{"title": "Shape of You", "artist": "Ed Sheeran", "album": "Divide", "genre": "Pop"},
     {"title": "Blinding Lights", "artist": "The Weeknd", "album": "After Hours", "genre": "Synth-Pop"},
     {"title": "Bohemian Rhapsody", "artist": "Queen", "album": "A Night at the Opera", "genre": "Rock"},
     {"title": "Stairway to Heaven", "artist": "Led Zeppelin", "album": "Led Zeppelin IV", "genre": "Rock"},
@@ -78,19 +19,3 @@ db.songs.insertMany(
     {"title": "Hallelujah", "artist": "Leonard Cohen", "album": "Various Positions", "genre": "Folk"},
     {"title": "Let It Be", "artist": "The Beatles", "album": "Let It Be", "genre": "Rock"}
 ]
-);
-```
-### Usage
-
-To run the frontend project(run on localhost:3000), execute the following command:
-
-```sh
-  cd frontend
-  npm start
-  ```
-To run the backend project(run on localhost:5000), execute the following command:
-
-```sh
-  cd backend
-  npm run dev
-```
